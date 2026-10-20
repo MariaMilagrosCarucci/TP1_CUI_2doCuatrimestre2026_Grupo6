@@ -15,140 +15,208 @@ import remeraChaco from '../images/remera_Chaco.jpg';
 import remeraFormosa from '../images/remera_Formosa.jpg';
 
 
+// Características comunes a todas las remeras de la colección
+const base = [
+  '100% algodón peinado 24/1',
+  'Estampa de fileteado porteño en serigrafía',
+  'Corte unisex clásico',
+  'Blanca con cuello redondo',
+];
+
 export const productos = [
   {
     id: 1,
-    nombre: "Remera Rio Negro",
-    categoria: "Indumentaria",
+    nombre: 'Remera Río Negro',
+    categoria: 'Patagonia',
     precio: 28500,
     imagen: remeraRioNegro,
-    descripcion: "Remera de calce holgado confeccionada en algodón peinado de alto gramaje con cuello de rib grueso.",
-    stock: 15
+    descripcion: 'Fileteado en azul y dorado con flores rojas.',
+    descripcionLarga:
+      'Río Negro en letras fileteadas azules, volutas doradas y flores rojas. Edición premium con estampa de mayor tamaño.',
+    caracteristicas: [...base, 'Edición premium: estampa grande'],
+    stock: 15,
+    destacado: true,
+    etiqueta: 'Más vendido',
   },
   {
     id: 2,
-    nombre: "Remera Buenos Aires",
-    categoria: "Indumentaria",
-    precio: 20000,
+    nombre: 'Remera Buenos Aires',
+    categoria: 'Centro',
+    precio: 24000,
     imagen: remeraBuenosAires,
-    descripcion: "Remera entallada de algodón premium con elastano, ideal para un look limpio y versátil.",
-    stock: 20
+    descripcion: 'El clásico porteño, con volutas doradas y flores.',
+    descripcionLarga:
+      'La remera que da origen a la colección: Buenos Aires en letras fileteadas con volutas doradas, flores y hojas, en el estilo de los viejos colectivos porteños.',
+    caracteristicas: [...base, 'Diseño insignia de la colección'],
+    stock: 20,
+    destacado: true,
+    etiqueta: 'Más vendido',
   },
   {
     id: 3,
-    nombre: "Remera Córdoba",
-    categoria: "Indumentaria",
-    precio: 20000,
+    nombre: 'Remera Córdoba',
+    categoria: 'Centro',
+    precio: 22000,
     imagen: remeraCordoba,
-    descripcion: "Remera tono crema con lavado gastado estilo vintage y estampa frontal serigrafiada.",
-    stock: 8
+    descripcion: 'Letras celestes con ornamentos dorados.',
+    descripcionLarga:
+      'Córdoba en letras fileteadas celestes y rojas, con ornamentos dorados y una cinta en la base. Un diseño alegre para llevar todos los días.',
+    caracteristicas: base,
+    stock: 8,
+    destacado: true,
   },
   {
     id: 4,
-    nombre: "Remera Jujuy",
-    categoria: "Indumentaria",
-    precio: 20000,
+    nombre: 'Remera Jujuy',
+    categoria: 'NOA',
+    precio: 22000,
     imagen: remeraJujuy,
-    descripcion: "Prenda técnica de alto rendimiento diseñada en microfibra transpirable con detalles reflectantes.",
-    stock: 25
+    descripcion: 'Colores intensos inspirados en la Quebrada.',
+    descripcionLarga:
+      'Jujuy en letras fileteadas con flores y volutas en colores intensos, inspirados en los cerros de la Quebrada de Humahuaca.',
+    caracteristicas: base,
+    stock: 25,
+    destacado: true,
+    etiqueta: 'Nuevo',
   },
   {
     id: 5,
-    nombre: "Remera La Rioja",
-    categoria: "Indumentaria",
+    nombre: 'Remera La Rioja',
+    categoria: 'NOA',
     precio: 20000,
     imagen: remeraLaRioja,
-    descripcion: "Remera de corte cuadrado con hombros caídos, fabricada en jersey de algodón pesado.",
-    stock: 12
+    descripcion: 'Fileteado en tonos tierra y dorado.',
+    descripcionLarga:
+      'La Rioja en letras fileteadas con detalles en tonos colorado y dorado, que recuerdan los paisajes de Talampaya.',
+    caracteristicas: base,
+    stock: 12,
   },
   {
     id: 6,
-    nombre: "Remera Misiones",
-    categoria: "Indumentaria",
+    nombre: 'Remera Misiones',
+    categoria: 'NEA',
     precio: 20000,
     imagen: remeraMisiones,
-    descripcion: "Remera manga larga con cartera de tres botones metálicos en tejido gofrado de algodón.",
-    stock: 10
+    descripcion: 'Flores y hojas en verdes de selva.',
+    descripcionLarga:
+      'Misiones en letras fileteadas rodeadas de flores y hojas en verdes intensos, un homenaje a la selva misionera.',
+    caracteristicas: base,
+    stock: 10,
+    destacado: true,
   },
   {
     id: 7,
-    nombre: "Remera Chubut",
-    categoria: "Indumentaria",
+    nombre: 'Remera Chubut',
+    categoria: 'Patagonia',
     precio: 20000,
     imagen: remeraChubut,
-    descripcion: "Remera de corte relaxed con proceso de teñido y desgaste marmolado artesanal.",
-    stock: 6
+    descripcion: 'Azules patagónicos con volutas doradas.',
+    descripcionLarga:
+      'Chubut en letras fileteadas en azules que recuerdan el mar patagónico, con volutas doradas y flores.',
+    caracteristicas: base,
+    stock: 6,
   },
   {
     id: 8,
-    nombre: "Remera Corrientes",
-    categoria: "Indumentaria",
-    precio: 20000,
+    nombre: 'Remera Corrientes',
+    categoria: 'NEA',
+    precio: 18500,
     imagen: remeraCorrientes,
-    descripcion: "Remera corta ajustada en tejido de morley acanalado con escote redondo cerrado.",
-    stock: 18
+    descripcion: 'Un diseño con ritmo de chamamé.',
+    descripcionLarga:
+      'Corrientes en letras fileteadas con flores y volutas en colores cálidos, con todo el ritmo del chamamé.',
+    caracteristicas: base,
+    stock: 18,
+    etiqueta: 'Oferta',
   },
   {
     id: 9,
-    nombre: "Remera Catamarca",
-    categoria: "Indumentaria",
+    nombre: 'Remera Catamarca',
+    categoria: 'NOA',
     precio: 20000,
     imagen: remeraCatamarca,
-    descripcion: "Remera de calce clásico con estampado de rayas horizontales tejidas en algodón 100%.",
-    stock: 14
+    descripcion: 'Fileteado con detalles rojos y dorados.',
+    descripcionLarga:
+      'Catamarca en letras fileteadas con detalles rojos y celeste con flores y detalles dorados.',
+    caracteristicas: base,
+    stock: 14,
   },
   {
     id: 10,
-    nombre: "Remera Chaco",
-    categoria: "Indumentaria",
-    precio: 20000,
+    nombre: 'Remera Chaco',
+    categoria: 'NEA',
+    precio: 18500,
     imagen: remeraChaco,
-    descripcion: "Remera blanca de corte unisex con un pequeño texto bordado en el pecho a tono.",
-    stock: 30
+    descripcion: 'Letras fileteadas con flores coloridas.',
+    descripcionLarga:
+      'Chaco en letras fileteadas con flores coloridas y volutas doradas.',
+    caracteristicas: base,
+    stock: 30,
+    etiqueta: 'Oferta',
   },
   {
     id: 11,
-    nombre: "Remera Mendoza",
-    categoria: "Indumentaria",
-    precio: 20000,
+    nombre: 'Remera Mendoza',
+    categoria: 'Cuyo',
+    precio: 24000,
     imagen: remeraMendoza,
-    descripcion: "Remera sin mangas con sisas profundas y bordes al corte confeccionada en jersey liviano.",
-    stock: 9
+    descripcion: 'Tonos vino y dorado, con mucha historia.',
+    descripcionLarga:
+      'Mendoza en letras fileteadas con tonos vino y celeste con flores, un homenaje a la tierra del sol y del buen vino.',
+    caracteristicas: base,
+    stock: 9,
+    destacado: true,
   },
   {
     id: 12,
-    nombre: "Remera Formosa",
-    categoria: "Indumentaria",
-    precio: 20000,
+    nombre: 'Remera Formosa',
+    categoria: 'NEA',
+    precio: 18500,
     imagen: remeraFormosa,
-    descripcion: "Remera estampada mediante técnica de teñido artesanal tie-dye en tonos lavanda.",
-    stock: 7
+    descripcion: 'Fileteado con flores del litoral.',
+    descripcionLarga:
+      'Formosa en letras fileteadas acompañadas de flores y hojas del litoral, en colores vivos.',
+    caracteristicas: base,
+    stock: 7,
   },
   {
     id: 13,
-    nombre: "Remera Entre Rios",
-    categoria: "Indumentaria",
+    nombre: 'Remera Entre Ríos',
+    categoria: 'Centro',
     precio: 20000,
     imagen: remeraEntreRios,
-    descripcion: "Remera de corte recto con escote en V elaborada en algodón peinado ligero.",
-    stock: 22
+    descripcion: 'Azules de río con detalles dorados.',
+    descripcionLarga:
+      'Entre Ríos en letras fileteadas en azules de río, con detalles dorados.',
+    caracteristicas: base,
+    stock: 22,
   },
   {
     id: 14,
-    nombre: "Remera Neuquén",
-    categoria: "Indumentaria",
-    precio: 20000,
+    nombre: 'Remera Neuquén',
+    categoria: 'Patagonia',
+    precio: 22000,
     imagen: remeraNeuquen,
-    descripcion: "Remera de manga larga con cuello semi-alto confeccionada en tejido elastizado.",
-    stock: 1
+    descripcion: 'Azul profundo con volutas doradas. ¡Última unidad!',
+    descripcionLarga:
+      'Neuquén en letras fileteadas azul profundo, con volutas doradas, cinta celeste y flores rojas.',
+    caracteristicas: base,
+    stock: 1,
+    destacado: true,
   },
   {
     id: 15,
-    nombre: "Remera La Pampa",
-    categoria: "Indumentaria",
+    nombre: 'Remera La Pampa',
+    categoria: 'Centro',
     precio: 20000,
     imagen: remeraLaPampa,
-    descripcion: "Remera negra oversize con una ilustración gráfica de estilo futurista en la espalda.",
-    stock: 0
-  }
+    descripcion: 'Dorados de campo con flores rojas.',
+    descripcionLarga:
+      'La Pampa en letras fileteadas con dorados que recuerdan los campos de trigo, y flores rojas.',
+    caracteristicas: base,
+    stock: 0,
+  },
 ];
+
+// Lista de categorías sin repetir, para el filtro del catálogo
+export const categorias = [...new Set(productos.map((producto) => producto.categoria))];
