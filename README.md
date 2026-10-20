@@ -6,13 +6,13 @@ La aplicación está inspirada en la cultura e identidad argentina, ofreciendo u
 
 👥 Integrantes del Equipo
 
-Integrante 1: Miriam Silvina Yanez
+Integrante 1: Miria Silvina Yáñez
 
 Integrante 2: Milgros Carucci
 
 Integrante 3: Marilin Grisafi
 
-Integrante 4: Laura Lovisa.
+Integrante 4: Laura Lovisa
 
 🚀 Demo y Enlaces
 
