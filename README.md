@@ -8,9 +8,9 @@ La aplicación está inspirada en la cultura e identidad argentina, ofreciendo u
 
 Integrante 1: Miriam Silvina Yanez
 
-Integrante 2: [Nombre y Apellido] - Legajo / DNI
+Integrante 2: Milgros Carucci
 
-Integrante 3: [Nombre y Apellido] - Legajo / DNI
+Integrante 3: Marilin Grisafi
 
 Integrante 4: Laura Lovisa.
 
